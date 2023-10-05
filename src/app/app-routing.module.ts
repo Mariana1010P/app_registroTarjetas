@@ -20,6 +20,9 @@ const routes: Routes = [
       {
         path: 'tarjeta', loadChildren: () => import('./tarjeta/tarjeta.module').then(m=>m.TarjetaModule)
       },
+      {
+        path: 'search', loadChildren: () => import('./search/search.module').then(m => m.SearchModule)
+      }
     ]
   }
   

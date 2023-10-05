@@ -14,13 +14,10 @@ export class EditarTarjetaComponent implements OnInit{
 
   getNumber: any = "";
   tarjetaForm!: FormGroup;
-  tarjeta: Tarjeta; // Declara la variable para la tarjeta
+  tarjeta!: Tarjeta; // Declara la variable para la tarjeta
 
-  constructor(
-    private fb: FormBuilder,
-    private tarjetaService: TarjetaService) {
-    this.tarjeta = new Tarjeta(); // Inicializa la tarjeta con valores vacíos
-  }
+  constructor(private fb: FormBuilder,
+    private tarjetaService: TarjetaService) {}
 
   ngOnInit() {
     this.tarjetaService.getTarjetaByNumero(this.getNumber).subscribe(
