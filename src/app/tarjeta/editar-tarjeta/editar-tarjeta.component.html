@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 offset-md-3"><br>
+            <h2>Editar Tarjeta</h2><br>
+            <form [formGroup]="tarjetaForm">
+                <div class="form-group">
+                    <label for="titular">Titular de la Tarjeta</label>
+                    <input type="text" class="form-control" id="titular" name="titular" formControlName="titular">
+                </div><br>
+                <div class="form-group">
+                    <label for="numero">Número de Tarjeta</label>
+                    <input type="number" class="form-control" id="numero" name="numero" formControlName="numero">
+                </div><br>
+                <div class="form-group">
+                    <label for="fecha">Fecha de Vencimiento (MM/AA)</label>
+                    <input type="text" class="form-control" id="fecha" name="fecha" formControlName="fecha">
+                </div><br>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="cvv" name="cvv" formControlName="cvv">
+                </div><br>
+                <br>
+                <button type="submit" class="btn btn-primary">Actualizar</button><br><br>
+            </form>
+        </div>
+    </div>
+</div>
